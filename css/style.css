@@ -32,6 +32,8 @@ h1 {
 #secondary_header_inner{
   margin: 20px -150px 20px -150px;
 }
+
+
 .rotate {
 
 /* Safari */
@@ -53,11 +55,35 @@ filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 #expander {
   font-size: 16px;
 }
+
 #drawer_box {
-  text-align:center
+  text-align:center;
+  margin-top: 20px;
+}
+
+
+#links_outer {
+  width: 200px;
+  padding: 10px auto 10px;
+  margin: 0px auto;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+#top_link_row {
+  margin:20px -150px 20px -150px;
+}
+
+#bottom_link_row {
+  margin:20px -150px 20px -150px;
 }
 
 #top_link_row li {
+  list-style: none;
+  display: inline;
+}
+
+#bottom_link_row li {
   list-style: none;
   display: inline;
 }
