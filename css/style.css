@@ -1,155 +1,117 @@
+html, body, #wrapper {
+  height:100%;
+}
+
 body {
-    background-color: #E6E6E6;
-    font: 13px HattoriHanzoLight;
-    color: #02243C;
-    letter-spacing: 1px;
+  background:url('../style/bg.jpg');
 }
 
-p {
-    text-indent: 30px;
-}
-#MainBox {
-    width: 450px;
-    margin: 100px auto 5px;
-    background-color: #BBBBBB;
-    padding: 10px 15px;
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    -webkit-box-shadow: 0 0 15px #888888;
+#wrapper {
+  background:url('../style/ribbon.png') center left repeat-x;
 }
 
-#footer {
-    text-align:center;
-    margin: 0 auto 150px;
-    color: #AAA;
-    
+h1 {
+  font-size:40px;
+  font-family:"Qwigley", script;
+  text-shadow:0 1px 0 white;
+  margin-top:20px;
+  padding-bottom:2px;
+  border-bottom:3px solid #aaa;
 }
 
-#about_text{
-    margin-left: 115px;
-}
-header{
-    text-transform: uppercase;
-}
-
-header h1{
-    font-size: 16px;
-}
-
-header h2{
-    font-size: 12px;
-    color: #00628b;
-    /* border-bottom: 1px solid #FFF; */
-    
+h2 {
+  font-family:"Vollkorn", sans-serif;
+  font-style:italic;
+  font-size:11px;
+  margin-bottom:15px;
+  padding-bottom:25px;
+  text-align:right;
+  margin-top:5px;
 }
 
-header nav{
-    float: right;
+#card {
+  height:154px;
+  width:354px;
+  background:#ddd;
+  position:absolute;
+  top:50%;
+  left:50%;
+  margin-top:-100px;
+  margin-left:-200px;
+  padding:20px;
+  -webkit-box-shadow:2px 2px 15px rgba(0,0,0,0.7);
+  border:2px solid #777;
 }
 
-header li {
-    list-style: none;
-    display: inline;
+ul {
+  height:32px;
+  list-style:none;
 }
 
-#MainContent {
-    margin-top: 15px;
-    position: relative;
+ul li {
+  float:left;
+  height:32px;
+  width:32px;
+  margin-right:7px;
+  text-indent:-100000px;
 }
 
-#MainContent p {
-    line-height: 15px;
+ul li a.email {
+  background:url('../style/icons/email.png');
 }
 
-#MainContent > div{
-    position: absolute;
-    top: 0;
-    left: 0;
+ul li a.facebook {
+  background:url('../style/icons/facebook.png');
 }
 
-#MugShot {
-    float: left;
-    margin: 5px 10px 0px 0px;
-    border: 2px solid #02243C;
-}
-nav a{
-    text-transform: uppercase;
-    font: 12px HattoriHanzoLight;
-    text-decoration: none;
-    color: #00628b;
-    -moz-transition: all 0.4s ease-in-out;
-    -webkit-transition: all 0.4s ease-in-out;
-    
+ul li a.twitter {
+  background:url('../style/icons/twitter.png');
 }
 
-#about_text a
-{
-    /* color: #5195CE; */
-    color: #00628b;
-    -moz-transition: all 0.4s ease-in-out;
-    -webkit-transition: all 0.4s ease-in-out;
-    text-decoration: none;
+ul li a.gplus {
+  background:url('../style/icons/google-plus.png');
 }
 
-#about_text a:hover{
-    color: #02243C;
-    padding-bottom: 5px;
+ul li a.linkedin {
+  background:url('../style/icons/linkedin.png');
 }
 
-nav a:hover{
-    color: #02243C;
+ul li a.stackoverflow {
+  background:url('../style/icons/stackoverflow.png');
 }
 
-#Contact {
-    padding-left: 50px;
-}
-#leftcontacts{
-    width: 200px;
-    float: left;
+ul li a.github {
+  background:url('../style/icons/github.png');
 }
 
-#rightcontacts{
-    width:200px;
-    float:left;
+ul li:last-child {
+  margin-right:none;
 }
 
-#Contact div a{
-    font: 12px HattoriHanzoLight;
-    padding-left: 35px;
-    display: block;
-    height: 24px;
-    line-height: 24px;
-    text-decoration: none;
-    color: #00628b;
-    -moz-transition: all 0.4s ease-in-out;
-    -webkit-transition: all 0.4s ease-in-out;
+ul li a {
+  display:block;
+  height:100%;
+  width:100%;
 }
 
-#Contact div a:hover{
-    color: #02243C;
+footer {
+  color:#777;
+  font-family:"Vollkorn", serif;
+  position:absolute;
+  width:100%;
+  bottom:0;
+  text-align:center;
+  font-size:12px;
+  text-shadow:1px 1px 2px rgba(0,0,0,0.8);
+  padding-bottom:3px;
 }
 
-#Contact li{
-    margin-bottom: 10px;
-    -moz-transition: all 0.4s ease-in-out;
-    -webkit-transition: all 0.4s ease-in-out;
+footer a {
+  color:inherit;
+  text-decoration:none;
 }
 
-#link_twitter{
-    background: url('../images/twitter.png') left center no-repeat;
-}
-#Contact a:hover{
-    padding-left: 45px;
+footer a:HOVER {
+  text-decoration:underline;
 }
 
-#link_fb{
-    background: url('../images/facebook.png') left center no-repeat;    
-}
-
-#link_li{
-    background: url('../images/linkedin.png') left center no-repeat;
-}
-
-#link_mail{
-    background: url('../images/email.png') left center no-repeat;
-}
