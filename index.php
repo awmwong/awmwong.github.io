@@ -17,7 +17,7 @@
       <div id="card">
 
         <h1>Anthony Wong</h1>
-        <h2>uWaterloo Software Engineering Undergraduate</h2>
+        <h2>Developer | SoftEng @ uWaterloo</h2>
 
         <ul>
           <li><a href="mailto:contact@awong.ca" class="email" title="Email">Email</a></li>
