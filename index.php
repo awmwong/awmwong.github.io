@@ -34,7 +34,7 @@
     </div>
 
     <footer>
-    &copy; <?php echo date('Y'); ?>, Anthony Wong. Design by <a href="http://timothy-armstrong.com">Timothy Armstrong</a>
+    &copy; <?php echo date('Y'); ?>, Anthony Wong. Design by <a href="http://twitter.com/timothya">@timothya</a>
     </footer>
 
   </body>
