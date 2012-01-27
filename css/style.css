@@ -32,7 +32,7 @@ h2 {
 #card {
   height:154px;
   width:354px;
-  background:#ddd;
+  background:#ddd url('../style/bg-white.png');
   position:absolute;
   top:50%;
   left:50%;

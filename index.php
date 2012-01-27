@@ -17,7 +17,7 @@
       <div id="card">
 
         <h1>Anthony Wong</h1>
-        <h2>uWaterloo Software Engineering Undergraduate</h2>
+        <h2>Developer | SoftEng @ uWaterloo</h2>
 
         <ul>
           <li><a href="mailto:contact@awong.ca" class="email" title="Email">Email</a></li>
@@ -34,7 +34,7 @@
     </div>
 
     <footer>
-    &copy; <?php echo date('Y'); ?>, Anthony Wong. Design by <a href="http://timothy-armstrong.com">Timothy Armstrong</a>
+    &copy; <?php echo date('Y'); ?>, Anthony Wong. Design by <a href="http://twitter.com/timothya">@timothya</a>
     </footer>
 
   </body>
