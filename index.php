@@ -40,6 +40,8 @@
           <li><a href="http://ca.linkedin.com/pub/anthony-wong/24/487/aab" class="linkedin" title="LinkedIn">LinkedIn</a></li>
           <li><a href="http://stackoverflow.com/users/931425/anthony-wong" class="stackoverflow" title="Stack Overlow">Stack Overflow</a></li>
           <li><a href="http://github.com/awmwong" class="github" title="GitHub">GitHub</a></li>
+          <li><a href="http://awong.ca/resume.pdf" class="resume" title="resume">Resume</a></li>
+
         </ul>
 
       </div>
