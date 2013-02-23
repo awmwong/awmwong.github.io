@@ -49,7 +49,7 @@
     </div>
 
     <footer>
-    &copy; <?php echo date('Y'); ?>, Anthony Wong. Designed with <a href="http://twitter.com/timothya">@timothya</a>
+      &copy; 2013, Anthony Wong. Designed with <a href="http://twitter.com/timothya">@timothya</a>
     </footer>
 
   </body>
