@@ -11,11 +11,47 @@ body {
   background:url('../style/bg.jpg');
 }
 
-div#wrapper {
+h1 {
+  font-size:24px;
+  padding-top: 0.5em;
+  padding-bottom:0.5em;
+  border-bottom:2px solid #be2929;
+  font-family: 'Merriweather', serif;
+}
+
+h2 {
+  font-family: 'Merriweather', serif;
+  font-style:italic;
+  font-size:11px; 
+  text-align:left;
+  margin-top:5px;
+}
+
+p {
+  color: #EEE;
+  font-family: 
+    "Helvetica Neue",
+    Helvetica,Arial,
+    "Lucida Grande",
+    sans-serif;
+  line-height: 24px;
+  margin-top: 1em;
+}
+
+div.wrapper {
   width: 900px;
   background:url('../style/ribbon-horizontal.png') repeat-y;
   background-position: 200px;
   margin: 0 auto;
+  padding-top: 48px;
+  padding-bottom: 15px;
+  overflow: scroll;
+}
+
+div.wrapper:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 div.header {
@@ -24,9 +60,9 @@ div.header {
   box-shadow: 0 0 12px 0 #000;
   background: #000;
   background: rgba(0,0,0,0.75);
+  position: fixed;
   top: 0;
-  left: 0;
-  width: 100%;
+  width: 900px;
   height: 48px;
   z-index: 1000;
 }
@@ -91,107 +127,53 @@ div.header-content nav.social a.twitter {
   background:url('../style/icons/twitter.png');
 }
 
-#headerbar-social ul li {
-  float: right;
-  margin-right:7px;
-  height:24px;
-  width:24px;
+div.content-wrapper {
+  clear: left;
+  padding-top: 15px;
 }
 
-h1 {
-  font-size:40px;
-  font-family:"Qwigley", script;
-  text-shadow:0 1px 0 white;
-  margin-top:20px;
-  padding-bottom:2px;
-  border-bottom:3px solid #aaa;
+div.left-container {
+  -moz-box-shadow: 0 0 12px 0 #000;
+  -webkit-box-shadow: 0 0 12px 0 #000;
+  box-shadow: 0 0 12px 0 #000;
+  background: #000;
+  background: rgba(0,0,0,0.75);
+  width: 200px;
+  height: 200px;
+  padding: 15px;
+  float: left;
 }
 
-h2 {
-  font-family:"Vollkorn", sans-serif;
-  font-style:italic;
-  font-size:11px;
-  margin-bottom:15px;
-  padding-bottom:25px;
-  text-align:right;
-  margin-top:5px;
+div.right-container {
+  -moz-box-shadow: 0 0 12px 0 #000;
+  -webkit-box-shadow: 0 0 12px 0 #000;
+  box-shadow: 0 0 12px 0 #000;
+  background: #000;
+  background: rgba(0,0,0,0.75);
+  width: 625px;
+  min-height: 200px;
+  padding: 15px;
+  float: left;
+  margin-left: 15px;
+  color: #fff;
 }
 
-#card {
-  height:154px;
-  width:354px;
-  background:#ddd url('../style/bg-white.png');
-  position:absolute;
-  top:50%;
-  left:50%;
-  margin-top:-100px;
-  margin-left:-200px;
-  padding:20px;
-  -webkit-box-shadow:2px 2px 15px rgba(0,0,0,0.7);
-  border:2px solid #777;
-}
-
-#card ul {
-  height:32px;
-  list-style:none;
-}
-
-#card ul li {
-  float:left;
-  height:32px;
-  width:32px;
-  margin-right:7px;
-  text-indent:-100000px;
-}
-
-ul li a.email {
-  background:url('../style/icons/email.png');
-}
-
-ul li a.facebook {
-  background:url('../style/icons/facebook.png');
-}
-
-ul li a.twitter {
-  background:url('../style/icons/twitter.png');
-}
-
-ul li a.gplus {
-  background:url('../style/icons/google-plus.png');
-}
-
-ul li a.linkedin {
-  background:url('../style/icons/linkedin.png');
-}
-
-ul li a.stackoverflow {
-  background:url('../style/icons/stackoverflow.png');
-}
-
-ul li a.github {
-  background:url('../style/icons/github.png');
-}
-
-ul li:last-child {
-  margin-right:none;
-}
-
-ul li a {
+div.right-container img {
   display:block;
-  height:100%;
-  width:100%;
+  margin: 0 auto;
+  max-width: 625px;
 }
+
 
 footer {
+  width: 900px;
   color:#777;
-  font-family:"Vollkorn", serif;
-  position:absolute;
-  width:100%;
-  bottom:0;
+  font-family: 'Merriweather', serif;
   text-align:center;
   font-size:12px;
   text-shadow:1px 1px 2px rgba(0,0,0,0.8);
-  padding-bottom:3px;
+  margin-top: 15px;
+  float: left;
 }
 
 footer a {
