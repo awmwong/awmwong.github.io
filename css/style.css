@@ -144,6 +144,11 @@ div.left-container {
   float: left;
 }
 
+div.left-container {
+  max-width: 200px;
+  max-height: 200px;
+}
+
 div.right-container {
   -moz-box-shadow: 0 0 12px 0 #000;
   -webkit-box-shadow: 0 0 12px 0 #000;
