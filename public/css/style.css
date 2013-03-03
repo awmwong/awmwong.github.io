@@ -5,6 +5,8 @@ html, body, #wrapper {
     Helvetica,Arial,
     "Lucida Grande",
     sans-serif;
+
+  letter-spacing: 1px;
 }
 
 body {
@@ -36,6 +38,15 @@ p {
     sans-serif;
   line-height: 24px;
   margin-top: 1em;
+  letter-spacing: 1px;
+}
+
+a {
+  color: #EEE;
+}
+
+a:hover {
+  color: #be2929;
 }
 
 div.wrapper {
@@ -44,8 +55,8 @@ div.wrapper {
   background-position: 200px;
   margin: 0 auto;
   padding-top: 48px;
-  padding-bottom: 15px;
-  overflow: scroll;
+  padding-bottom: 80px;
+  overflow: hidden;
 }
 
 div.wrapper:after {
@@ -72,7 +83,6 @@ div.header-content {
 }
 
 div.header-content a {
-  color: #fff;
   text-transform: uppercase;
   letter-spacing: 3px;
   font-weight: bold;
@@ -86,7 +96,6 @@ div.header-content a.title {
   font-size: 16px;
   margin-top: 18px;
   margin-left: 18px;
-  border: 1px #000;
 }
 
 div.header-content nav.primary {
@@ -99,6 +108,11 @@ div.header-content nav.primary {
 
 div.header-content nav.primary a {
   margin-right: 10px;
+  padding-bottom: 6px;
+}
+
+div.header-content nav.primary a.active{
+  border-bottom: 2px solid #be2929;
 }
 
 div.header-content nav.social {
@@ -130,6 +144,34 @@ div.header-content nav.social a.twitter {
 div.content-wrapper {
   clear: left;
   padding-top: 15px;
+}
+
+div.content-wrapper ul {
+  display: block;
+  list-style-type: disc;
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 15px;
+  -webkit-padding-start: 40px;
+  line-height: 24px;
+}
+
+div.content-wrapper ul li .company-term {
+  text-align: right;
+  float: right;
+}
+
+div.full-width-container {
+  -moz-box-shadow: 0 0 12px 0 #000;
+  -webkit-box-shadow: 0 0 12px 0 #000;
+  box-shadow: 0 0 12px 0 #000;
+  background: #000;
+  background: rgba(0,0,0,0.75);
+  width: 870px;
+  padding: 15px;
+  float: left;
+  color: #fff;
 }
 
 div.left-container {
