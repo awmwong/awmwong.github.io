@@ -10,7 +10,7 @@ html, body, #wrapper {
 }
 
 body {
-  background:url('../style/bg.jpg');
+  background:url('../images/bg.jpg');
 }
 
 h1 {
@@ -130,20 +130,29 @@ div.header-content nav.social a {
 }
 
 div.header-content nav.social a.email {
-  background:url('../style/icons/email.png');
+  background:url('../images/icons/email.png');
 }
 
 div.header-content nav.social a.facebook {
-  background:url('../style/icons/facebook.png');
+  background:url('../images/icons/facebook.png');
 }
 
 div.header-content nav.social a.twitter {
-  background:url('../style/icons/twitter.png');
+  background:url('../images/icons/twitter.png');
 }
 
 div.content-wrapper {
   clear: left;
   padding-top: 15px;
+}
+
+div.content-wrapper a {
+  text-decoration: none;
+  color: #db5858;
+}
+
+div.content-wrapper a:hover {
+  text-decoration: underline;
 }
 
 div.content-wrapper ul {
@@ -157,9 +166,15 @@ div.content-wrapper ul {
   line-height: 24px;
 }
 
-div.content-wrapper ul li .company-term {
+.company-term {
   text-align: right;
   float: right;
+}
+
+.blog-date {
+  text-align: right;
+  float: right;
+  font-style: italic;
 }
 
 div.full-width-container {
