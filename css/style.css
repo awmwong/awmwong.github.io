@@ -51,7 +51,7 @@ a:hover {
 
 div.wrapper {
   width: 900px;
-  background:url('../style/ribbon-horizontal.png') repeat-y;
+  background:url('../images/ribbon-horizontal.png') repeat-y;
   background-position: 200px;
   margin: 0 auto;
   padding-top: 48px;
@@ -226,6 +226,14 @@ div.right-container img {
   max-width: 625px;
 }
 
+.highlight pre {
+  border: 1px solid #db5858;
+  background: rgba(0,0,0,0.75);
+  font-family: monospace;
+  line-height: 16px;
+  padding: 15px;
+
+}
 
 footer {
   width: 900px;

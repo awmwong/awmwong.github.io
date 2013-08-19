@@ -1,9 +1,12 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "Welcome to the new awong.ca"
 date:   2013-08-18 10:46:36
 categories: blog
 ---
+
+So I've finally gotten around to finishing this iteration of my page. Welcome to
+ version 3 of awong.ca! Now with actual content and text!
 
 You'll find this post in your `_posts` directory - edit this post and re-build (or run with the `-w` switch) to see your changes!
 To add new posts, simply add a file in the `_posts` directory that follows the convention: YYYY-MM-DD-name-of-post.ext.
