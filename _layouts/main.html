@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,700'
+    rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" type="text/css" href="/css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="/css/syntax.css" />
+
+    <script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-28698808-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+     var ga = document.createElement('script');
+     ga.type = 'text/javascript'; ga.async = true;
+     ga.src = ('https:' == document.location.protocol ? 
+       'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+     var s = document.getElementsByTagName('script')[0];
+     s.parentNode.insertBefore(ga, s);
+   })();
+
+   </script>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="header">
+        <div class="header-content">
+          <a class="title" href="/" title="Anthony Wong">Anthony Wong</a>
+          <nav class="primary">
+            <a href="/" title="About">About</a>
+            <a href="/blog" title="Blog">Blog</a>
+          </nav>
+          <nav class="social">
+            <a href="mailto:contact@awong.ca" class="email" title="Email"></a>
+            <a href="http://facebook.com/awmwong" class="facebook"
+            title="Facebook"></a>
+            <a href="http://twitter.com/wong" class="twitter"
+            title="Twitter"></a>
+          </nav>
+        </div>
+      </div>
+
+      {{ content }}
+
+        <footer>
+          &copy; 2013, Anthony Wong.
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
