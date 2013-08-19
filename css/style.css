@@ -235,6 +235,12 @@ div.right-container img {
 
 }
 
+.post-content img {
+  display:block;
+  margin: auto auto;
+  max-width: 625px;
+}
+
 footer {
   width: 900px;
   color:#777;
