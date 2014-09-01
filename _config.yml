@@ -1,4 +1,4 @@
 name: Anthony Wong
 markdown: redcarpet
-pygments: true
+highlighter: pygments
 permalink: /blog/:year/:month/:day/:title
