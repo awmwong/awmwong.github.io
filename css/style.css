@@ -50,6 +50,7 @@ a:hover {
 }
 
 div.wrapper {
+  height: 100%;
   width: 900px;
   background:url('../images/ribbon-horizontal.png') repeat-y;
   background-position: 200px;
@@ -145,7 +146,7 @@ div.header-content nav.social a.twitter {
 
 div.content-wrapper {
   clear: left;
-  padding-top: 15px;
+  padding-top: 50%;
 }
 
 div.content-wrapper a {
