@@ -1,5 +1,4 @@
-awong.ca
+awong.ca / awmwong.github.io
 ========
 
-My personal website and blog.
-Powered by Jekyll.
+My personal website.

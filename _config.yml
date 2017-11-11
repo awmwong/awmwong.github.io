@@ -1,4 +1,0 @@
-name: Anthony Wong
-markdown: redcarpet
-highlighter: pygments
-permalink: /blog/:year/:month/:day/:title

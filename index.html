@@ -1,26 +1,50 @@
----
-layout: main
-title: About
----
-<!-- misc -->
-<div class="content-wrapper">
-  <div class="full-width-container">
-    <h1>Hi there!</h1>
-    <p>
-      I currently work at <a href="http://www.kik.com">Kik</a> as a Development Manager.
-      I'm a <a href="https://uwaterloo.ca/software-engineering/">Software Engineering</a> graduate from the
-      <a href="http://uwaterloo.ca">University of Waterloo</a>.  
-      <a href="http://twitter.com/wong">Twitter</a> and <a
-      href="http://facebook.com/awmwong">Facebook</a> are my primary social
-      networks, but I also maintain a professional network through <a
-      href="http://www.linkedin.com/pub/anthony-wong/24/487/aab">
-      LinkedIn</a>. I write and store most of my shareable code on <a
-      href="http://github.com/awmwong">GitHub</a> (including <a
-      href="http://github.com/awmwong/awong.ca">this site</a>), and I'm a long
-      time lurker of <a href="http://stackoverflow.com/users/931425/anthony-
-      wong">Stack Overflow</a>. I hate cilantro <a href="http://arxiv.org/abs/1209.2096">(not by choice!)</a>
-      and less-so, onions. Powered by <a
-      href="http://jekyllrb.com">Jekyll</a>.
-    </p>
-  </div>
-</div>
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>anthony&bull;wong</title>
+    <link href="https://fonts.googleapis.com/css?family=EB+Garamond:400,400i,700&amp;subset=latin-ext" rel="stylesheet">
+    <link href="css/reset.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <meta name="description" content="Anthony is...">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="header">
+        <span class="name" title="">anthony<span class="bullet">&bull;</span>wong</span>
+        <div class="details">
+          <span title="don't forget the 'th' sound">/ &#712;&aelig;n&theta;&#601;ni w&#596;&#331; /</span>,
+          <span class="type" title="Hooman.">human.</span>
+        </div>
+      </div>
+      <dl class="list">
+        <dd>
+          <span class="number">1.</span>
+          a singer of <a href="https://en.wikipedia.org/wiki/O_Canada" title="'eh?" class="hvr-underline-reveal">O'Canada</a>.
+        </dd>
+        <dd>
+          <span class="number">2.</span>
+          a <a href="http://hackertyper.net/" title="I make the beep boops..." class="hvr-underline-reveal">Senior Developer</a> at <a href="https://www.kik.com" title="primarily for iOS" class="hvr-underline-reveal">Kik</a>.
+        </dd>
+        <dd>
+          <span class="number">3.</span>
+          a <a href="https://uwaterloo.ca/software-engineering/" class="hvr-underline-reveal">graduate</a> of the <a href="https://uwaterloo.ca/" title="the one with the lasers for a logo" class="hvr-underline-reveal">University of Waterloo</a>.
+        </dd>
+      </dl>
+      <div id="more">
+        <span class="more">more:</span>
+        <a class="hvr-underline-reveal" href="https://linkedin.com/in/awmwong" title="Maybe we could work together?">linkedin</a>,
+        <a class="hvr-underline-reveal" href="https://twitter.com/wong" title="No, the handle is not for sale.">twitter</a>,
+        <a class="hvr-underline-reveal" href="https://github.com/awmwong" title="Only what I can show you">github</a>.
+      </div>
+    </div>
+    <footer>
+      &copy; <span class="year">2017</span>
+    </footer>
+    <script>
+      document.querySelector('footer .year').textContent =
+          (new Date()).getFullYear();
+    </script>
+  </body>
+</html>
