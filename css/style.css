@@ -6,51 +6,59 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'EB Garamond', serif;
+  font-family: 'Work Sans', sans-serif;
   font-size: 14pt;
-  color: #1f1f1f;
-  background: #e1dad1;
+  color: #161a1d;
+  background: #f5f3f4;
   line-height: 1.2;
 }
 
 a {
   color: inherit;
-  font-weight: bold;
+  font-weight: 100;
   text-decoration: none;
   position: relative;
 }
 
 a:hover {
-  color: #c64630;
+  color: #a4161a;
+}
+
+#wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#logo {
+  width: 25vw;
+  min-width: 100px;
+  margin-bottom: 1em;
+}
+
+#wrapper #more {
+  margin-top: 1em;
 }
 
 .name {
-  font-weight: bold;
+  font-weight: normal;
   font-size: 150%;
   line-height: 1.2;
-  letter-spacing: 1.5px;
+  letter-spacing: 1px;
   display: inline-block;
+}
+
+.highlighted {
+  color: #a4161a;
 }
 
 .details {
   font-style: italic;
 }
 
-.number {
-  font-style: italic;
-}
-
-.list {
-  text-indent: 20px;
-  line-height: 1.5;
-}
-
 .more {
-  line-height: 1.5;
-}
-
-.bullet {
-  font-size: 50%;
+  line-height: 2.5;
 }
 
 /* Underline Reveal */
@@ -71,7 +79,7 @@ a:hover {
   left: 0;
   right: 0;
   bottom: 0;
-  background: #1f1f1f;
+  background: #ba181b;
   height: 2px;
   -webkit-transform: translateY(2px);
   transform: translateY(2px);
@@ -88,7 +96,6 @@ a:hover {
   transform: translateY(0);
 }
 
-
 footer {
   position: absolute;
   bottom: 10px;
@@ -96,6 +103,6 @@ footer {
   width: 100%;
   text-align: center;
   font-size: 10px;
-  font-family: 'EB Garamond', seif;
+  font-family: 'Work Sans', sans-serif;
   opacity: 0.4;
 }
