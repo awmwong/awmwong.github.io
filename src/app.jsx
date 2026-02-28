@@ -86,10 +86,10 @@ function AnthonyWong() {
 
           <div className="space-y-1">
             <p className="text-lg text-white/90 font-medium">
-              Staff Software Engineer, Mobile
+              Staff Software Engineer
             </p>
             <p className="text-sm text-white/70">
-              Currently at <span className="font-semibold text-white/85">Fanatics Betting & Gaming</span>
+              Currently <span className="font-semibold text-white/85">between things</span>
             </p>
           </div>
 
