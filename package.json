@@ -1,13 +1,14 @@
 {
   "name": "awmwong.github.io",
-  "version": "1.0.0",
-  "description": "v6.0 glass",
+  "version": "7.0.0",
+  "description": "v7.0 holo",
   "main": "index.js",
   "scripts": {
     "build:css": "tailwindcss -i ./css/input.css -o ./css/output.css --minify",
-    "build:js": "esbuild src/app.jsx --bundle --minify --outfile=js/app.js",
+    "build:js": "esbuild src/app.jsx --bundle --minify --loader:.wgsl=text --outfile=js/app.js",
     "build": "npm run build:css && npm run build:js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "tailwindcss -i ./css/input.css -o ./css/output.css --watch & esbuild src/app.jsx --bundle --loader:.wgsl=text --outdir=js --servedir=.",
+    "test": "bun test"
   },
   "repository": {
     "type": "git",

@@ -2,124 +2,170 @@
 @tailwind components;
 @tailwind utilities;
 
-@keyframes blob1 {
-    0%, 100% {
-    transform: translate(0px, 0px) scale(1);
-    }
-    25% {
-    transform: translate(100px, -80px) scale(1.2);
-    }
-    50% {
-    transform: translate(-50px, 120px) scale(0.8);
-    }
-    75% {
-    transform: translate(150px, 50px) scale(1.1);
-    }
-}
-
-@keyframes blob2 {
-    0%, 100% {
-    transform: translate(0px, 0px) scale(1);
-    }
-    20% {
-    transform: translate(-120px, 90px) scale(1.3);
-    }
-    60% {
-    transform: translate(80px, -100px) scale(0.9);
-    }
-    80% {
-    transform: translate(-30px, 40px) scale(1.15);
-    }
-}
-
-@keyframes blob3 {
-    0%, 100% {
-    transform: translate(0px, 0px) scale(1);
-    }
-    30% {
-    transform: translate(60px, 130px) scale(0.85);
-    }
-    65% {
-    transform: translate(-140px, -70px) scale(1.25);
-    }
-    85% {
-    transform: translate(40px, -20px) scale(1.05);
-    }
-}
-
-@keyframes blob4 {
-    0%, 100% {
-    transform: translate(0px, 0px) scale(1);
-    }
-    15% {
-    transform: translate(-80px, -110px) scale(1.1);
-    }
-    45% {
-    transform: translate(130px, 60px) scale(0.95);
-    }
-    75% {
-    transform: translate(-60px, 90px) scale(1.2);
-    }
-}
-
-@keyframes blob5 {
-    0%, 100% {
-    transform: translate(0px, 0px) scale(1);
-    }
-    35% {
-    transform: translate(110px, 100px) scale(1.15);
-    }
-    55% {
-    transform: translate(-90px, -80px) scale(0.88);
-    }
-    90% {
-    transform: translate(20px, 120px) scale(1.08);
-    }
-}
-
-@keyframes blob6 {
-    0%, 100% {
-    transform: translate(0px, 0px) scale(1);
-    }
-    25% {
-    transform: translate(-100px, 70px) scale(1.22);
-    }
-    70% {
-    transform: translate(90px, -90px) scale(0.92);
-    }
-    85% {
-    transform: translate(-40px, -30px) scale(1.12);
-    }
-}
-
-.animate-blob-1 {
-    animation: blob1 10s ease-in-out infinite;
-}
-
-.animate-blob-2 {
-    animation: blob2 13s ease-in-out infinite;
-}
-
-.animate-blob-3 {
-    animation: blob3 11s ease-in-out infinite;
-}
-
-.animate-blob-4 {
-    animation: blob4 15s ease-in-out infinite;
-}
-
-.animate-blob-5 {
-    animation: blob5 12s ease-in-out infinite;
-}
-
-.animate-blob-6 {
-    animation: blob6 14s ease-in-out infinite;
-}
-
 body {
   font-family: 'Inter', sans-serif;
 }
 
 h1 {
   font-family: 'Manrope', sans-serif;
+}
+
+@keyframes blob1 {
+  0%, 100% { transform: translate(0px, 0px) scale(1); }
+  25% { transform: translate(100px, -80px) scale(1.2); }
+  50% { transform: translate(-50px, 120px) scale(0.8); }
+  75% { transform: translate(150px, 50px) scale(1.1); }
+}
+.animate-blob-1 { animation: blob1 10s ease-in-out infinite; }
+
+@keyframes blob2 {
+  0%, 100% { transform: translate(0px, 0px) scale(1); }
+  20% { transform: translate(-120px, 90px) scale(1.3); }
+  60% { transform: translate(80px, -100px) scale(0.9); }
+  80% { transform: translate(-30px, 40px) scale(1.15); }
+}
+.animate-blob-2 { animation: blob2 13s ease-in-out infinite; }
+
+@keyframes blob3 {
+  0%, 100% { transform: translate(0px, 0px) scale(1); }
+  30% { transform: translate(60px, 130px) scale(0.85); }
+  65% { transform: translate(-140px, -70px) scale(1.25); }
+  85% { transform: translate(40px, -20px) scale(1.05); }
+}
+.animate-blob-3 { animation: blob3 11s ease-in-out infinite; }
+
+@keyframes blob4 {
+  0%, 100% { transform: translate(0px, 0px) scale(1); }
+  15% { transform: translate(-80px, -110px) scale(1.1); }
+  45% { transform: translate(130px, 60px) scale(0.95); }
+  75% { transform: translate(-60px, 90px) scale(1.2); }
+}
+.animate-blob-4 { animation: blob4 15s ease-in-out infinite; }
+
+@keyframes blob5 {
+  0%, 100% { transform: translate(0px, 0px) scale(1); }
+  35% { transform: translate(110px, 100px) scale(1.15); }
+  55% { transform: translate(-90px, -80px) scale(0.88); }
+  90% { transform: translate(20px, 120px) scale(1.08); }
+}
+.animate-blob-5 { animation: blob5 12s ease-in-out infinite; }
+
+@keyframes blob6 {
+  0%, 100% { transform: translate(0px, 0px) scale(1); }
+  25% { transform: translate(-100px, 70px) scale(1.22); }
+  70% { transform: translate(90px, -90px) scale(0.92); }
+  85% { transform: translate(-40px, -30px) scale(1.12); }
+}
+.animate-blob-6 { animation: blob6 14s ease-in-out infinite; }
+
+/* --- Holo card ------------------------------------------------------
+   Driven by CSS custom properties set from JS (useCardTilt):
+   --rx/--ry  card rotation (deg)
+   --px/--py  light position (%) — sheen and glare track the tilt
+   --tilt     0..1 tilt magnitude, scales effect intensity            */
+
+.holo-scene {
+  perspective: 900px;
+}
+
+.holo-card {
+  transform: rotateX(var(--rx, 0deg)) rotateY(var(--ry, 0deg)) scale(calc(1 + var(--tilt, 0) * var(--scale-pop, 0.015)));
+  transform-style: preserve-3d;
+  will-change: transform;
+  box-shadow:
+    0 40px 80px -24px rgba(0, 0, 0, 0.8),
+    0 12px 28px -12px rgba(0, 0, 0, 0.6);
+}
+
+.holo-layer {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+}
+
+/* Iridescent foil: fine spectral stripes fixed to the card, revealed
+   only where the "light" is (mask follows --px/--py) and hue-rotating
+   with tilt — color at any spot changes with viewing angle. */
+.holo-sheen {
+  background-image: var(--sheen-gradient, repeating-linear-gradient(
+    115deg,
+    hsla(0, 0%, 88%, 0.45) 0px,
+    hsla(0, 0%, 48%, 0.22) 34px,
+    hsla(0, 0%, 96%, 0.50) 68px,
+    hsla(0, 0%, 58%, 0.24) 102px,
+    hsla(0, 0%, 85%, 0.42) 136px,
+    hsla(0, 0%, 88%, 0.45) 170px
+  ));
+  background-size: 200% 200%;
+  background-position: calc(var(--px, 50%) * 0.6 + 20%) calc(var(--py, 50%) * 0.6 + 20%);
+  mask-image: radial-gradient(
+    ellipse var(--mask-size, 66%) var(--mask-size, 66%) at var(--px, 50%) var(--py, 50%),
+    black 8%,
+    rgba(0, 0, 0, 0.35) 42%,
+    transparent 68%
+  );
+  -webkit-mask-image: radial-gradient(
+    ellipse var(--mask-size, 66%) var(--mask-size, 66%) at var(--px, 50%) var(--py, 50%),
+    black 8%,
+    rgba(0, 0, 0, 0.35) 42%,
+    transparent 68%
+  );
+  mix-blend-mode: color-dodge;
+  filter: blur(var(--sheen-blur, 22px)) saturate(var(--sheen-sat, 1.45)) brightness(1.05) hue-rotate(calc(var(--ry, 0deg) * var(--hue-factor, 8)));
+  opacity: calc(var(--tilt, 0) * var(--sheen-gain, 0.9) + var(--sheen-base, 0.15));
+}
+
+/* Environmental reflection: a blurred band of the background palette
+   (--env-a/b/c, shared with the blob field) that counter-moves with the
+   tilt, so the card appears to mirror its surroundings. */
+.holo-reflect {
+  background-image: linear-gradient(
+    115deg,
+    transparent 24%,
+    var(--env-a, transparent) 40%,
+    var(--env-b, transparent) 52%,
+    var(--env-c, transparent) 64%,
+    transparent 80%
+  );
+  background-size: 220% 220%;
+  background-position: calc(100% - var(--px, 50%)) calc(100% - var(--py, 50%));
+  mix-blend-mode: screen;
+  filter: blur(var(--reflect-blur, 26px)) saturate(1.15);
+  opacity: calc(var(--tilt, 0) * var(--reflect-gain, 0.6) + var(--reflect-base, 0.1));
+}
+
+/* Sharp specular streak: the "catches the light" moment. */
+.holo-streak {
+  background-image: linear-gradient(
+    120deg,
+    transparent 42%,
+    hsla(0, 0%, 100%, 0.28) 49%,
+    hsla(0, 0%, 100%, 0.42) 50%,
+    hsla(0, 0%, 100%, 0.28) 51%,
+    transparent 58%
+  );
+  background-size: 320% 320%;
+  background-position: var(--px, 50%) var(--py, 50%);
+  mix-blend-mode: screen;
+  opacity: calc(var(--tilt, 0) * var(--streak-gain, 0.8));
+}
+
+.holo-glare {
+  background: radial-gradient(
+    farthest-corner at var(--px, 50%) var(--py, 50%),
+    hsla(0, 0%, 100%, 0.38) 0%,
+    hsla(0, 0%, 100%, 0.10) 28%,
+    transparent 60%
+  );
+  mix-blend-mode: screen;
+  opacity: calc(var(--tilt, 0) * var(--glare-gain, 0.75) + var(--glare-base, 0.18));
+}
+
+/* Fine grain so the surface reads as material rather than plastic. */
+.holo-grain {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.5'/%3E%3C/svg%3E");
+  background-size: 180px 180px;
+  mix-blend-mode: overlay;
+  opacity: var(--grain-opacity, 0.22);
 }
